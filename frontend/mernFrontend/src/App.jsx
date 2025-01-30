@@ -1,8 +1,16 @@
+import { useColorMode } from "./context/colorMode"
+import RoutesPage from "./Routes/RoutesPage"
+
+
 const App = () => {
+  const {colorMode} =useColorMode()
+  
   return(
-    <div >
-      app
+    // <div className={`${colorMode==='light'?'bg-white':'bg-slate-600'} min-h-screen`}>
+<div className= {`${colorMode === 'light' ? 'bg-slate-100':'bg-slate-700' } min-h-screen`}>
+      <RoutesPage />
     </div>
+  
   )
 }
 export default App
