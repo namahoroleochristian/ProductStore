@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { CiDark, CiSquarePlus } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
-import { useColorMode } from '../context/colorMode';
+import { useColorMode } from '../context/ThemeContext.jsx';
 
 function Navbar() {
     const {colorMode,toggleColorMode} =useColorMode()
