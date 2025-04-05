@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { useColorMode } from '../context/colorMode';
+import Login from '../components/Login'
+// import { useColorMode } from '../context/ThemeContext.jsx';
 
 function HomePage() {
 
@@ -9,7 +10,7 @@ function HomePage() {
     <div className='h-full w-full'>
         <Navbar/>
         <div>
-          <h2>No Data Here</h2>
+          <Login/>
         </div>
     </div>
   )

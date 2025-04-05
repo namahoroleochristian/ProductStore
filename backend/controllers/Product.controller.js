@@ -6,7 +6,7 @@ export const CreateProduct = async (req, res) => {
     if (!products.name || !products.price || !products.image) {
      return  res.status(400).json({
         success: false,
-        message: "don't give me empty stuff FILL IT 😡",
+        message: "fill needed fields",
       });
      
     }
