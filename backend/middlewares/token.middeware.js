@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 export const tokenVerifier = ( req,res,next) => {
+    // TOKEN REQUESTING
         const token = req.cookies.jwt
         if (!token) {
             res.status(401).json({success:false,message:'access denied'})
